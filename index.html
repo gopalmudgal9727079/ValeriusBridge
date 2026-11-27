@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251f">
+  <title>ValeriusBridge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="brand">
+      <div class="mark">VB</div>
+      <p class="eyebrow">VALERIUSBRIDGE</p>
+      <h1>Tasks. Trust.<br><span>Transparent settlement.</span></h1>
+      <p class="sub">A controlled workspace connecting clients, customers and administration.</p>
+      <div class="security-note">Mobile number + 4-digit PIN access</div>
+    </section>
+    <section class="panel" id="login-panel">
+      <p class="eyebrow dark">WELCOME BACK</p>
+      <h2>Sign in</h2>
+      <p class="muted">Use the mobile number and PIN issued or approved for your account.</p>
+      <form id="login-form">
+        <label for="phone">Indian mobile number</label>
+        <div class="phone-wrap"><span>+91</span><input id="phone" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="10-digit mobile number" required></div>
+        <label for="pin">4-digit PIN</label>
+        <input id="pin" inputmode="numeric" autocomplete="current-password" maxlength="4" pattern="[0-9]{4}" placeholder="••••" required>
+        <button id="login-button" type="submit">Sign in securely</button>
+        <p id="message" class="message" role="status"></p>
+      </form>
+      <p class="footnote">No SMS or email login. If you need access or a PIN reset, contact the administrator.</p>
+    </section>
+    <section class="panel hidden" id="workspace">
+      <div class="workspace-head">
+        <div><p class="eyebrow dark">YOUR WORKSPACE</p><h2 id="role-title">Account</h2></div>
+        <button class="secondary" id="logout-button" type="button">Sign out</button>
+      </div>
+      <p class="muted">Your session is authenticated. This starter build does not yet expose package, order, wallet or proof-management actions.</p>
+      <div class="notice">Next development stage: connect role-specific dashboards and protected backend operations.</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
